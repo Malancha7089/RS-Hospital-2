@@ -1,0 +1,153 @@
+/* Reset some default styles and apply a basic layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+nav.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.sidebar li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav.sidebar a:hover {
+    background-color: #444;
+}
+
+main.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav.sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main.content {
+        margin-left: 0;
+    }
+}
+/* Style the main content area */
+.main-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 0;
+    flex: 1; /* Ensure the content area takes up remaining space */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+}
+
+/* Style section headers */
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style individual sections within the main content */
+.main-content .section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style links or buttons within the content */
+.main-content a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.main-content a:hover {
+    color: #1c6da8;
+}
+
+/* Style tables within the content */
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-content th, .main-content td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Style buttons within the content */
+.main-content .button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.main-content .button:hover {
+    background-color: #1c6da8;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.stats {
+    background-color: blue;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,589 @@
++<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style> 
+            .sub-nav {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+           
+           .nav-item:hover .sub-nav {
+            display: block;
+           }
+           .sub-nav a {
+            float: none;
+          color:black;
+          padding:12px 16px;
+          text-decoration:none;
+          display:block;
+          text-align:left;
+          background-color: rgb(98, 211, 136);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2)
+          whitesmoke;
+          z-index: 1;
+           }
+          .image-container {
+             text-align: center; 
+             margin-top: 80px;   
+            }
+            
+          .image-container img {
+             max-width: 100%;    
+             height: 400px;       
+             
+             border-radius: 10px;
+            }
+            .inner_matter {
+              text-align: center; 
+              margin: 0 auto;     
+              max-width: 1000px;   
+              
+            }
+            .styledtext{
+              font-size: 24px;            
+              font-weight: bold;          
+              color: #0073e6;            
+              text-decoration: underline; 
+              font-family: Arial, sans-serif; 
+            };
+            
+            .inner_matter p {
+              font-family: "Open Sans", Helvetica, sans-serif;
+              font-size: 14px;
+              color: #0343bb;
+              text-decoration: none;
+              clear: both;
+              line-height: 20px;
+              margin-bottom: 15px;
+            }
+            .inner_matter h1 {
+              font-size: 24px;            
+              font-weight: bold;          
+              color: #0073e6;            
+              text-decoration: underline; 
+              font-family: Arial, sans-serif; 
+              padding: 20px;
+            }
+            
+            .demo {
+               margin: 0px auto;
+               font-family: 'Open Sans', sans-serif;
+               font-size: 12px;
+               color: #0343bb;
+            }
+            
+            
+            .resp-tabs-list {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+             display: flex;
+             justify-content: center; 
+            }
+            .resp-tab-item {
+              margin: 0 10px; 
+              padding: 10px 20px; 
+              background-color: #f2f2f2; 
+              border-radius: 5px; 
+             cursor: pointer;
+             transition: background-color 0.3s ease; 
+            }
+            .resp-tab-active {
+              background: rgb(0, 208, 255); 
+              color:black; 
+            }
+            .resp-tab-item:hover {
+              background-color: #2fc26c; 
+            }
+            .resp-tabs-container {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #c3d2c5;
+    }
+
+    /* Style the heading */
+    .resp-accordion {
+      font-size: 34px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    /* Style the image */
+    .tab_left_img_area img {
+      max-width: 100%;
+      border: 2px solid #0b0a0a;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    /* Style the name and title */
+    .tab_left_img_area h3 {
+      font-size: 20px;
+      color: #150909;
+      padding: 20px;
+    }
+
+    .tab_left_img_area h4 {
+      font-size: 16px;
+      color: #100f0f;
+    }
+
+    /* Style the strong text */
+    .inner_matter_bold_text {
+      font-weight: bold;
+      color: #1c1b1b;
+    }
+
+    /* Style paragraphs */
+    .resp-tabs-container p {
+      font-size: 16px;
+      color: #141313;
+      line-height: 1.5;
+    }
+
+   
+
+          
+      </style>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>NEW DAYS</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    </head>
+    <body>
+        <div class="header_section">
+            <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
+              <div class="logo"></div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="logo_main" href="index.html"><img src="https://th.bing.com/th?id=OIP.7MLGpi08hnurRJSCDWc58QHaHv&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"a>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                    
+                    <ul class="sub-nav">
+                      <li><a href="overview.html">Overview</a></li>
+                      <li><a href="bod.html">Board of directors</a></li>
+                      <li><a href="vandm.html"> Mission and vision</a></li>
+                      <li><a href="csr.html"> CSR policy</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="doctor.html">Patients</a>
+                    <ul class="sub-nav">
+                      <li><a href="pg.html">Patient guide</a></li>
+                      <li><a href="package.html">Packages</a></li>
+                      <li><a href="insurance.html">Insurance</a></li>
+                      <li><a href="international.html"> International patient</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="depatments.html">Department</a>
+                    <ul class="sub-nav">
+                      <li><a href="Cardiology.html">Cardiology</a>
+                      </li>
+                      <li><a href="Dermatology.html">Dermatogy</a>
+                     </li>
+                     <li><a href="Neurology.html">Neurology</a>
+                    </li>
+                    <li><a href="Urology.html">Urology</a>
+                    </li>
+                    <li><a href="Oncology.html">Oncology</a>
+                    </li>
+                    <li><a href="Plastic Surgery.html">ENT</a>
+                    </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="academic.html">Academic</a>
+                    <ul class="sub-nav">
+                      <li><a href="medical.html">medical</a> </li>
+                      <li><a href="doctor.html">doctor</a> </li>
+    
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Login</a>
+                    <ul class="sub-nav">
+                      <li><a href="login.html">user login</a></li>
+                      <li><a href="adminlogin.html">admin login</a></li>
+                    </ul>
+                  </li>              
+                </ul>
+              </div>
+            </nav>
+            <nav class="mobile_header navbar navbar-expand-lg navbar-light bg-light">
+              <div class="logo"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a></div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                    
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="doctor.html">Patients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="logo_main" href="index.html"><img src="images/logo.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="depatments.html">Department</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Academic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="doctor.html">Contact us</a>
+                  </li>
+    
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>              
+                </ul>
+              </div>
+            </nav>
+          </div>
+                </ul>
+        </div>
+        <div class="image-container">
+            <img src="https://th.bing.com/th?id=OIP.xjN0ci7BwtNKJHnrmolyfwHaDR&w=350&h=154&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Image Description">
+        </div>
+        <div class="inner_matter">
+          <h1> BOARD OF DIRECTORS</h1>
+          <p>
+            <a href="index.html">HOME</a>
+            >
+            <a href="about.html">ABOUT US</a>
+            >
+            <a href="bod.html">BOARD OF DIRECTORS</a>
+          </p>
+        </div>
+        <div class="demo">
+            
+        </div>
+        <div id="horizontalTab" >
+  <ul class="resp-tabs-list">
+      <li class="resp-tab-item" >
+        <a class="resp-tab-active" href="bod.html">P S Bhattacharyya</a>
+      </li>
+      <li class="resp-tab-item" >
+        <a class="resp-tab-active" href="DNGhosh.html">Mr D N Ghosh</a>
+      </li>
+      <li class="resp-tab-item" >
+        <a class="resp-tab-active" href="DMukherjee.html">Mr D Mukerjee</a>
+      </li>
+ </ul>
+</div>
+<div class="resp-tabs-container">
+    <h2 class="resp-accordion">Mr D N Ghosh</h2>
+    <div class="tab_left_img_area">
+        <img src="https://content.jdmagicbox.com/comp/kolkata/t9/033pxx33.xx33.131118125039.f2t9/catalogue/dr-devanu-ghosh-roy-kolkata-cardiologists-jbsir-250.jpg">
+          <h3>Mr D N Ghosh</h3>
+          <h4>Director</h4>
+      </div>
+      
+ <strong class="inner_matter_bold_text">Mr Dhruba Narayan Ghosh</strong> has extensive experience in the fields of finance and administration. He worked as Secretary, Department of Production &amp; Supplies, Ministry of Defence, Chairman of State Bank of India, Chairman of Philips India Limited, Chairman of L&amp;T Limited; Chairman of Management Development Institute, Gurgaon. 
+  <br><br>
+  
+  <strong class="inner_matter_bold_text">Other Directorships held in:</strong>
+  <br>
+  Housing Development Finance Corporation Limited<br>
+  Birla Corporation Limited
+      <p></p>
+</div>
+<div class="info_section layout_padding">
+    <div class="container ">
+      <div class="info_content">
+            <div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-flex">
+              <h5>
+                Medical Care
+              </h5>
+            </div>
+            <div class="d-flex ">
+              <ul>
+                <li>
+                  <a href="">
+                    About Us
+                  </a>
+                  
+                </li>
+                <li>
+                  <a href="">
+                    About services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              <ul class="ml-3 ml-md-5">
+                <li>
+                  <a href="">
+                    Cancer Oncology
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Dental Surgery
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Diagnose & Research
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Drug / Medicines
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex">
+              <h5>
+                The Services
+              </h5>
+            </div>
+            <div class="d-flex ">
+              <ul>
+                <li>
+                  <a href="">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              <ul class="ml-3 ml-md-5">
+                <li>
+                  <a href="">
+                    Cancer Oncology
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Dental Surgery
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Diagnose & Research
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Drug / Medicines
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex">
+              <h5>
+                Departments
+              </h5>
+            </div>
+            <div class="d-flex ">
+              <ul>
+                <li>
+                  <a href="">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    About Departments
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              <ul class="ml-3 ml-md-5">
+                <li>
+                  <a href="">
+                    Cancer Oncology
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Dental Surgery
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Diagnose & Research
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Drug / Medicines
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+        <div class="social-box">
+          <a href="">
+            <img src="images/fb-icon.png" alt="" />
+          </a>
+
+          <a href="">
+            <img src="images/twitter-icon.png" alt="" />
+          </a>
+          <a href="">
+            <img src="images/linkedin-icon.png" alt="" />
+          </a>
+          <a href="">
+            <img src="images/instagram-icon.png" alt="" />
+          </a>
+        </div>
+        <div class="form_container mt-5">
+          <form action="">
+            <label for="subscribeMail">
+              Newsletter
+            </label>
+            <input
+              type="email"
+              placeholder="Enter Your email"
+              id="subscribeMail"
+            />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- end info section -->
+  <!-- footer section end -->
+  <!-- copyright section start -->
+  <div class="copyright_section">
+    <div class="container">
+    </div>
+  </div>
+  <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+          
+</body>
+</html>
+  
+
+  

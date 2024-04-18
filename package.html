@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <style>
+            .sub-nav {
+                display: none;
+                position:absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .nav-item:hover .sub-nav{
+                display: block;
+            }
+            .sub-nav a{
+              float: none;
+          color:black;
+          padding:12px 16px;
+          text-decoration:none;
+          display:block;
+          text-align:left;
+          background-color: rgb(98, 211, 136);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2)
+          whitesmoke;
+          z-index: 1;
+            }
+            .image-container{
+                text-align: center;/*center the image horizontally*/
+                margin-top: 80px;/*adjust the margin as need for spacing*/
+            }
+            .image-container img{
+                max-width: 100%;/*ensure the image fits within its container*/
+                height: 400px;/*maintain the aspect ratio of the image*/
+                
+                border-radius: 10px;
+            }
+            .inner_matter{
+                text-align: center;
+                margin: 0 auto;
+                max-width: 1000px;
+            }
+            strong{
+                font-weight: bold;
+            }
+            .inner_matter p{
+                font-family: "open sans",helvetica,sans-serif;
+                font-size: 14px;
+                color: #0343bb;
+                text-decoration: none;
+                clear: both;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+            .logo{
+              max-width:5%;
+              height: 5%;
+              border-radius: 2px solid #333;
+            }
+            .inner_matter_right_area{
+              text-align: center;
+              color: #0343bb;
+              font-style: italic;
+            }
+        </style>
+<!--basic-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<!--mobile metas-->
+<meta name="viewport"content="width=device-width,initial-scale=1">
+<meta name="viewport"content="initial-scale=1,maximum-scale=1">
+<!--site metas-->
+<title>NEW DAYS</title>
+<meta name="keywords"content="">
+<meta name="description"content="">
+<meta name="author"content="">
+<!--bootstrap css-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--style css-->
+<link rel="stylesheet" href="css/style.css">
+<!--responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!--fevicon-->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!--scrollbar custom css-->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!--tweaks for older IEs-->
+<link rel="stylesheet" href="http://netdna.bootstrap.com/font-awesome/4.0.3/css/font-awesome.css">
+<!--owl stylesheet-->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+    <div class="header_section">
+        <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="logo"><a href="index.html"><img src="https://th.bing.com/th?id=OIP.7MLGpi08hnurRJSCDWc58QHaHv&w=244&h=255&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></a></div>
+                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+
+                        <ul class="sub-nav">
+                            <li><a href="team.html">Overview</a> </li>
+                            <li><a href="board.html"> Board of directors</a> </li>
+                            <li><a href="mission.html">mission and vision</a> </li>
+                            <li><a href="CSR.html">CSR policy</a> </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor.html">Patients</a>
+                        <ul class="sub-nav">
+                            <li><a href="pg.html">Patient guide</a> </li>
+                            <li><a href="package.html">Packages</a> </li>
+                            <li><a href="insurance.html">Insurance</a> </li>
+                            <li><a href="international.html">International patient</a> </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="depatments.html">Depatments</a>
+                        <ul class="sub-nav">
+                          <li><a href="Cardiology.html">Cardiology</a>
+                          </li>
+                          <li><a href="Dermatology.html">Dermatogy</a>
+                         </li>
+                         <li><a href="Neurology.html">Neurology</a>
+                        </li>
+                        <li><a href="Urology.html">Urology</a>
+                        </li>
+                        <li><a href="Oncology.html">Oncology</a>
+                        </li>
+                        <li><a href="Plastic Surgery.html">ENT</a>
+                        </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academic.html">Academic</a>
+                        <ul class="sub-nav">
+                          <li><a href="medical.html">medical</a> </li>
+                          <li><a href="doctor.html">doctor</a> </li>
+        
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="login.html">Login</a>
+                      <ul class="sub-nav">
+                        <li><a href="login.html">user login</a></li>
+                        <li><a href="adminlogin.html">admin login</a></li>
+                      </ul>
+                    </li>              
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <!--banner-->
+                    <div class="banner_area">
+                        <div class="slider-wrapper theme-default">
+                            <div id="slider" class="nivoSlider">
+                                <img src="https://wanowrie.rubyhall.com/img/bg/panel-of-doctor.jpg" alt="Image description">
+                            </div>
+                            <!--banner-->
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_matter">
+                    <h1>Packages</h1>
+                    <p>
+                        <a href="index.html">HOME</a>
+                        >
+                        <a href="about.html">ABOUT US</a>
+                        >
+                        <a href="doctor.html">Patient</a>
+                        >
+                        <a href="package.html">Packages</a>
+                    </p>
+                </div>
+                <div class="inner_matter_right_area">
+                    <h1><b><u>Healthcare packages for patients</u></b></h1>
+                    <div class="box_one">
+                        <div class="table_one">CORONARY ANGIOGRAPHY</div>
+                        <div class="table_two">CORONARY ANGIOPLASTY</div>
+                        <div class="table_one">BALOON VALVULOPLASTY</div>
+                        <div class="table_two">PERIPHERAL ANGIOPLASTY</div>
+                        <div class="table_one">OPEN HEART(CABG)</div>
+                        <div class="table_two">ASD/VSD PACKAGES</div>
+                        <div class="table_one">LAP CHOLEY</div>
+                        <div class="table_two">IOL PHACO</div>
+                        <div class="table_one">PERIPHERAL ANGIOPLASTY</div>
+                        <div class="table_two">EXTENDED OPEN HEART</div>
+                        <div class="table_one">PERIPHERAL VASCULAR EMBOLISATION</div>
+                    </div>
+                    <p style="text-align: left;">
+                        "Please enquire package details and charges from the PRO Office or mail us at"
+                        <b>corporate@peerlesshospital.com</b>
+                    </p>
+                    <div class="info_section layout_padding">
+                        <div class="container ">
+                          <div class="info_content">
+                                <div>
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="d-flex">
+                                  <h5>
+                                    Medical Care
+                                  </h5>
+                                </div>
+                                <div class="d-flex ">
+                                  <ul>
+                                    <li>
+                                      <a href="">
+                                        About Us
+                                      </a>
+                  
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        About services
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        About Departments
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Services
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Contact Us
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <ul class="ml-3 ml-md-5">
+                                    <li>
+                                      <a href="">
+                                        Cancer Oncology
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Dental Surgery
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Diagnose & Research
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Drug / Medicines
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="d-flex">
+                                  <h5>
+                                    The Services
+                                  </h5>
+                                </div>
+                                <div class="d-flex ">
+                                  <ul>
+                                    <li>
+                                      <a href="">
+                                        About Us
+                                      </a>
+                                      
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        About services
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        About Departments
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Services
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Contact Us
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <ul class="ml-3 ml-md-5">
+                                    <li>
+                                      <a href="">
+                                        Cancer Oncology
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Dental Surgery
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Diagnose & Research
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Drug / Medicines
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="d-flex">
+                                  <h5>
+                                    Departments
+                                  </h5>
+                                </div>
+                                <div class="d-flex ">
+                                  <ul>
+                                    <li>
+                                      <a href="">
+                                        About Us
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        About services
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        About Departments
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Services
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Contact Us
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <ul class="ml-3 ml-md-5">
+                                    <li>
+                                      <a href="">
+                                        Cancer Oncology
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Dental Surgery
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Diagnose & Research
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="">
+                                        Drug / Medicines
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+                            <div class="social-box">
+                              <a href="">
+                                <img src="images/fb-icon.png" alt="" />
+                              </a>
+                  
+                              <a href="">
+                                <img src="images/twitter-icon.png" alt="" />
+                              </a>
+                              <a href="">
+                                <img src="images/linkedin-icon.png" alt="" />
+                              </a>
+                              <a href="">
+                                <img src="images/instagram-icon.png" alt="" />
+                              </a>
+                            </div>
+                            <div class="form_container mt-5">
+                              <form action="">
+                                <label for="subscribeMail">
+                                  Newsletter
+                                </label>
+                                <input
+                                  type="email"
+                                  placeholder="Enter Your email"
+                                  id="subscribeMail"
+                                />
+                                <button type="submit">
+                                  Subscribe
+                                </button>
+                              </form>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end info section -->
+                      <!-- footer section end -->
+                      <!-- copyright section start -->
+                      <div class="copyright_section">
+                        <div class="container">
+                          <p class="copyright">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+                        </div>
+                      </div>
+                      <!-- copyright section end -->
+                        <!-- Javascript files-->
+                        <script src="js/jquery.min.js"></script>
+                        <script src="js/popper.min.js"></script>
+                        <script src="js/bootstrap.bundle.min.js"></script>
+                        <script src="js/jquery-3.0.0.min.js"></script>
+                        <script src="js/plugin.js"></script>
+                        <!-- sidebar -->
+                        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+                        <script src="js/custom.js"></script>
+                        <!-- javascript --> 
+                        <script src="js/owl.carousel.js"></script>
+                        <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+                     </body>
+                     </html>
+                </div>
